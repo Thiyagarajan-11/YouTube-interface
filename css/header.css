@@ -1,0 +1,153 @@
+.header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(211, 211, 211);
+    z-index: 100;
+}
+.left_side{
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-right: 55px;
+}
+.youtube-logo{
+    height: 20px;
+    cursor: pointer;
+}
+.menu{
+    height: 24px;
+    margin-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.mid_side{
+  
+    flex: 1;
+display: flex;
+flex-direction: row;
+align-items: center;
+max-width: 500px;
+min-width: 125px;
+}
+.tb1{
+    height: 36px;
+    flex:1;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgb(0,0,0,0.05);
+    width: 0;
+    border-radius: 20px;
+}
+.tb1::placeholder{
+    font-family: Roboto;
+    font-size: 16px;
+}
+.search-button{
+    height: 40px;
+    width: 55px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    margin-left: -30px;
+    background-color: rgb(248, 248, 248);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+.search{
+    height: 25px;
+    padding-top: 6px;
+}
+.mic{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+    padding-top: 3px;
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+.mic-image{
+    height: 24px;
+    padding-top: 5px;
+}
+.right_side{
+width: 210px;
+margin-left: 30px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-shrink: 0;
+position: relative;
+margin-right: 20px;
+}
+.create-icon{
+    height: 24px;
+    cursor: pointer;
+}
+.app-icon{
+    height: 24px;
+    cursor: pointer;
+}
+.noti-icon{
+    height: 24px;
+    cursor: pointer;
+}
+.noti-info{
+    position: absolute;
+    right: -3px;
+    top:-2px;
+    background-color: rgb(207, 2, 2);
+    color: white;
+    padding:2px 5px 2px 5px ;
+    border-radius: 10px;
+    font-size: xx-small
+
+}
+
+.profile-icon{
+    height: 33px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.search-button,.mic,
+.right-tp{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.tp{
+    position: absolute;
+    bottom: -50px;
+    background-color: rgba(116, 115, 115, 0.76);
+    color: white;
+    font-family: Roboto;
+    padding: 10px 5px 10px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+    pointer-events: none;
+}
+.search-button:hover .tp,.mic:hover .tp,
+.create-icon:hover .tp,.app-icon:hover .tp,
+.noti-icon:hover .tp,.profile-icon:hover .tp,
+.right-tp:hover .tp{
+    opacity: 1;
+}
+
